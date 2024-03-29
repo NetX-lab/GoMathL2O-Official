@@ -11,7 +11,7 @@ where $f$ is a smooth convex function and $r$ is proper, convex and, possibly no
 
 
 **(Optimizee).** 
-In folder `./optimizees/`, each instance of $F(x)$ , two types: LASSO and Logistic+$L_1$-norm. We borrow the implementations in [1] for $f$'s gradient, the proximal operator for $r$, and $F$'s subgradient ($L_1$-norm's subgradient is calculated by $sign(x)$). We implement two boundaries of $r$'s subgradient set, reproducible training and validating data generation with given seeds, and $L$-smoothness calculation for Logistic.
+In folder `./optimizees/`, each instance of $F(x)$ , two types: LASSO and Logistic+ $L_1$-norm. We borrow the implementations in [1] for $f$'s gradient, the proximal operator for $r$, and $F$'s subgradient ($L_1$ -norm's subgradient is calculated by $sign(x)$ ). We implement two boundaries of $r$'s subgradient set, reproducible training and validating data generation with given seeds, and $L$-smoothness calculation for Logistic.
 
 **(Optimizer).** 
 In the folder `./optimizers/`, iterative learning-based and non-learning algorithms for solving optimizes. We borrow the following implementations in [1]:
@@ -41,7 +41,7 @@ scipy=1.10.1
 
 ## Start up: A toy example
 We borrow the following toy example configuration in [1].
-$$ F(x) = \frac{1}{2}\|\|Ax-b\|\|^2_2 + \lambda \|\|x\|\|_1$$
+$$F(x) = \frac{1}{2}\|\|Ax-b\|\|^2_2 + \lambda \|\|x\|\|_1$$
 
 where $A\in\mathbb{R}^{20\times40},x\in\mathbb{R}^{40},b\in\mathbb{R}^{20}$. An optimizer is then trained to find solutions for these generated optimizes.
 
