@@ -1,0 +1,56 @@
+---
+
+optimizee-type: LASSO
+input-dim: 128
+output-dim: 64
+sparsity: 10
+
+optimizer: GOMathL2O
+lstm-layers: 2
+lstm-hidden-size: 20
+grad-method: smooth_grad
+
+r-use: false
+r-scale: 1.0
+r-scale-learned: false
+r-norm: sigmoid
+
+q-use: false
+q-scale: 1.0
+q-scale-learned: false
+q-norm: sigmoid
+
+b-use: false
+b-scale: 1.0
+b-scale-learned: false
+b-norm: sigmoid1
+
+b3-use: false
+b3-scale: 1.0
+b3-scale-learned: false
+b3-norm: sigmoid1
+
+b4-use: false
+b4-scale: 1.0
+b4-scale-learned: false
+b4-norm: sigmoid1
+
+
+B-step-size: "B"
+C-step-size: "C"
+
+save-dir: "LASSO-real"
+
+device: cuda:1
+
+test: true
+test-length: 1000
+test-size: 1000
+test-batch-size: 50
+loss-save-path: losses-real
+
+# step-size: 1e-4
+momentum1: 1e-4
+momentum2: 1e-4
+eps: 1e-8
+hyper-step: 1e-7

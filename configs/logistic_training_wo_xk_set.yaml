@@ -1,0 +1,65 @@
+---
+
+optimizee-type: LogisticL1
+input-dim: 50
+output-dim: 1000
+sparsity: 20
+rho: 0.1
+
+optimizer: GOMathL2O
+lstm-layers: 2
+lstm-hidden-size: 20
+grad-method: smooth_grad
+
+r-use: false
+r-scale: 1.0
+r-scale-learned: false
+r-norm: softplus
+
+q-use: false
+q-scale: 10.0
+q-scale-learned: false
+q-norm: softplus
+
+b-use: false
+b-scale: 1.0
+b-scale-learned: false
+b-norm: softplus
+
+b3-use: false
+b3-scale: 1.0
+b3-scale-learned: false
+b3-norm: softplus
+
+b4-use: false
+b4-scale: 1.0
+b4-scale-learned: false
+b4-norm: softplus
+
+
+B-step-size: "B"
+C-step-size: "C"
+
+state-scale: 1
+
+save-dir: "LogisticL1"
+
+device: cuda:1
+
+init-lr: 3e-3
+global-training-steps: 500
+optimizer-training-steps: 100
+unroll-length: 20
+train-batch-size: 128
+scheduler: "step"
+clip-grad: true
+
+val-size: 1024
+val-freq: 5
+val-length: 100
+
+print-freq: 20
+
+epochs: 3
+
+loss-func: "mean"

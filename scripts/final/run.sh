@@ -1,0 +1,8 @@
+sh scripts/final/1_lasso_ablation_ind_gomathl2o_Q_config.sh
+sh scripts/final/1_lasso_ablation_ood_gomathl2o_Q_config.sh
+
+sh scripts/final/1_lasso_ablation_ind_gomathl2o_training_config_20100.sh
+
+sh scripts/final/1_lasso_ablation_ind_gomathl2o_training_config_50100.sh
+
+sh scripts/final/1_lasso_ablation_ind_gomathl2o_training_config_100100.sh
