@@ -96,7 +96,7 @@ To obtain Figures 16 and 17, please run `./scripts/logistic_ood_baseline_l2opa.s
 ## Citing our work
 Please cite our paper if you find our codes helpful in your research or work.
 ```
-@inproceedings{song2024towards,
+@inproceedings{song2024gomathl2o,
   title     = {Towards Robust Learning to Optimize with Theoretical Guarantees},
   author    = {Song, Qingyu and Lin, Wei and Wang, Juncheng and Xu, Hong},
   booktitle = {{Proc.~IEEE/CVF CVPR}},
@@ -105,7 +105,7 @@ Please cite our paper if you find our codes helpful in your research or work.
 ```
 
 ## Acknowledgement
-This repository is conducted based on the official implementation [1] of Math-L2O [2].
+This repository is developed based on the official implementation [1] of Math-L2O [2].
 
 
 ## References
