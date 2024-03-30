@@ -25,7 +25,7 @@ In the folder `./optimizers/`, iterative learning-based and non-learning algorit
 We provide two loss functions, which can be selected by the `loss-func` term in the folder `./configs/.` Mean (set by `mean`):
 $$L(\theta) = E_{f,r} \left[\frac{1}{K}\sum_{k=1}^{K} f(x_k) + r(x_k) \right].$$
 Weighted-sum (set by `weighted_sum`):
-$$L(\theta) = E_{f,r} \left[\sum_{k=1}^{K} \left(k/\sum_{k=1}^{K}\right) f(x_k) + r(x_k) \right].$$
+$$L(\theta) = E_{f,r} \left[\sum_{k=1}^{K} \left(k\Big/\left(\sum_{k=1}^{K}k\right)\right) f(x_k) + r(x_k) \right].$$
 In both functions, $x_k$ is the solution at $k$-th iteration. $\theta$ represents the parameters in the L2O model, and $K$ denotes the number of iterations. The `unroll-length` term in the folder `./configs/` can configure $K$.
 
 
