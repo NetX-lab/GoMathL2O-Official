@@ -1,6 +1,6 @@
 # Towards Robust Learning to Optimize with Theoretical Guarantees
 
-This repo implements the proposed model in the CVPR 2024 paper: Towards Robust Learning to Optimize with Theoretical Guarantees. 
+This repo implements the proposed model in the CVPR 2024 paper: [Towards Robust Learning to Optimize with Theoretical Guarantees.](https://henryhxu.github.io/share/qingyu-cvpr24.pdf) 
 Based on the Math-L2O framework [2], our theory part formulated the L2O model's convergences in two typical OOD scenarios: Initial point OOD and objective OOD. 
 Our modeling part proposes a gradient-only L2O model to reduce the L2O model's input feature magnitude. For the technical details, please find our paper below.
 
